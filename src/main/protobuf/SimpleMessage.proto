@@ -1,9 +1,19 @@
 syntax = "proto3";
 
-package com.codingharbour.protobuf;
-option java_outer_classname = "SimpleMessageProtos";
+package quan.dev.springkafkaprotobuf.model;
+option java_outer_classname = "ProtoMessage";
+option java_multiple_files = true;
 
 message SimpleMessage {
 	string content = 1;
 	string date_time = 2;
+}
+
+message KafkaMesageProtobuf {
+	int32 id = 1;
+	string name = 2;
+	string address = 3;
+	string phone_number = 4;
+	int32 age = 5;
+
 }

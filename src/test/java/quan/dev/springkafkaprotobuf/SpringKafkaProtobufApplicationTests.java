@@ -1,5 +1,6 @@
 package quan.dev.springkafkaprotobuf;
 
+import com.google.protobuf.InvalidProtocolBufferException;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -7,7 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SpringKafkaProtobufApplicationTests {
 
     @Test
-    void contextLoads() {
+    void contextLoads() throws InvalidProtocolBufferException {
+
     }
 
 }
